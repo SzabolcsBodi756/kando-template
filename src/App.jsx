@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import schoolLogo from './assets/kando.jpg'
 import './App.css'
 
-function App() {
+export const App = () => {
   const [count, setCount] = useState(0)
 
   return (
