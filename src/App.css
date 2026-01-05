@@ -40,3 +40,153 @@
 .read-the-docs {
   color: #888;
 }
+
+.page {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* vízszintes közép */
+  justify-content: flex-start;
+
+  padding: 24px;
+}
+
+.loadBox{
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: left;
+}
+
+.loadRow{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 8px 0;
+}
+
+.hint{ opacity: 0.85; }
+
+.error{
+  margin-top: 8px;
+  padding: 10px;
+  border: 1px solid rgba(255,0,0,0.35);
+  border-radius: 10px;
+}
+
+.fileLabel{
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+.fileLabel input{ display: none; }
+
+.btn{
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn:disabled{
+  opacity: 0.6;
+  cursor: default;
+}
+
+.counter{ margin: 10px 0 18px; }
+.question{ margin: 10px 0 18px; }
+
+.multiHint{
+  text-align: left;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin: 0 0 12px;
+  opacity: 0.95;
+}
+
+.answers{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.answer{
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+  background: transparent;
+  text-align: left;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.answer:disabled{
+  opacity: 0.95;
+  cursor: default;
+}
+
+.selected{
+  outline: 2px solid rgba(255,255,255,0.35);
+}
+
+.correct{ background-color: #9be59b; }
+.wrong{ background-color: #f5a2a2; }
+
+.finalize{
+  margin-top: 12px;
+}
+
+.review{
+  margin-top: 20px;
+  text-align: left;
+}
+
+.reviewItem{
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding: 14px 0;
+}
+
+.reviewQ{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.reviewNum{
+  display: inline-block;
+  width: 32px;
+}
+
+.reviewA .answer{
+  cursor: default;
+}
+
+.reviewResult{
+  margin-top: 8px;
+}
+
+.tag{
+  margin-left: 8px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.restartBtn{
+  margin-top: 16px;
+}
+
+.content {
+  width: 100%;
+  max-width: 760px;
+  text-align: center;
+}
